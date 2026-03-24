@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PAC2 - Choropleth map</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: Arial, sans-serif;
+      background: #ddebf5;
+    }
+
+    .contenidor {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenidor">
+    <iframe
+      title="Superfície forestal cremada per comarca a Catalunya"
+      aria-label="Choropleth map"
+      id="datawrapper-chart-s3nOV"
+      src="https://datawrapper.dwcdn.net/s3nOV/8/"
+      scrolling="no"
+      frameborder="0"
+      style="width: 0; min-width: 100% !important; border: none;"
+      height="747"
+      data-external="1">
+    </iframe>
+    <script type="text/javascript">
+      window.addEventListener("message", function(a) {
+        if (void 0 !== a.data["datawrapper-height"]) {
+          var e = document.querySelectorAll("iframe");
+          for (var t in a.data["datawrapper-height"]) {
+            for (var r, i = 0; r = e[i]; i++) {
+              if (r.contentWindow === a.source) {
+                var d = a.data["datawrapper-height"][t] + "px";
+                r.style.height = d;
+              }
+            }
+          }
+        }
+      });
+    </script>
+  </div>
+</body>
+</html>
